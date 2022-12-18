@@ -1,0 +1,82 @@
+
+:root {
+  --title: rgb(232, 143, 143);
+  --white: white;
+  --txt: rgb(15, 14, 13);
+  --shadow: rgba(191, 167, 167, 0.218);
+}
+
+main {
+  min-height: calc(100vh - 3rem);
+  display: grid;
+  place-items: center;
+}
+
+nav {
+  background-color: var(--white);
+}
+
+nav .nav-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 5px 5px 10px var(--shadow);
+  background-color: var(--white);
+  letter-spacing: 0.2rem;
+}
+
+nav .nav-title {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: var(--title);
+}
+
+nav .nav-links {
+  display: flex;
+  font-size: 1.1rem;
+  color: var(--txt);
+  font-weight: 400;
+}
+
+nav .nav-links a {
+  padding: 0.8rem;
+  margin: 1rem;
+}
+
+.container {
+  display: grid;
+  margin: 0 auto;
+  max-width: 90vw;
+  justify-content: center;
+}
+
+.container h2 {
+  background-color: var(--txt);
+  color: white;
+  padding: 1rem;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  border-radius: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container h2 .color-code {
+  color: var(--title);
+}
+
+
+/* MAIN CLICK BTN */
+
+main .btn {
+  padding: 1rem;
+  border: 2px solid var(--txt);
+  border-radius: 2rem;
+  box-shadow: 5px 5px 10px var(--shadow);
+  font-weight: 700;
+}
+
+main .btn:hover {
+  background-color: var(--title);
+  transition: background-color 0.7s ease;
+}

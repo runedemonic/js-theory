@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+        h2 {
+            font-weight: 700;
+            position: relative;
+            text-align: center;
+        }
+
+        h2::after {
+            content: "";
+            background: #f8a456;
+            width: 10%;
+            height: 5px;
+            position: absolute;
+            left: 45%;
+            bottom: -10px;
+        }
+
+        nav {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .sel-btn {
+            border: 2px solid #f8a456;
+            background: #fff;
+            color: #f8a456;
+            padding: .5rem 1rem;
+            border-radius: 10px;
+            transition: .3s ease;
+            cursor: pointer;
+        }
+
+        .sel-btn:hover {
+            background: #f8a456;
+            color: #fff;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        section .box {
+            display: flex;
+            width: 45%;
+            margin: 0 1rem 2rem 0;
+        }
+
+        section .box .img-area {
+            width: 40%;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-right: 1rem;
+            object-fit: contain;
+        }
+
+        section .box img {
+            width: 100%;
+        }
+
+        section .box .info {
+            width: 60%;
+        }
+
+        section .box .info h3 {
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #dadada;
+        }
+
+        section .box .info span {
+            margin-left: 1rem;
+            color: #f8a456;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>Our Menu</h2>
+            <nav>
+                <button class="sel-btn" type="button" data-id="all">All</button>
+                <button class="sel-btn" type="button" data-id="breakfast">Breakfast</button>
+                <button class="sel-btn" type="button" data-id="lunch">Lunch</button>
+                <button class="sel-btn" type="button" data-id="shakes">Shakes</button>
+                <button class="sel-btn" type="button" data-id="dinner">Dinner</button>
+            </nav>
+        </header>
+        <main>
+            <section class="box-area">
+                <div class="box">
+                    <div class="img-area">
+                        <img src="https://source.unsplash.com/random/?dessert" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Menu Title <span>Price</span></h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate nam unde quod, excepturi
+                            asperiores maxime itaque eveniet possimus placeat sapiente? Magnam dignissimos ducimus eius
+                            iste nobis doloribus quam in?</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+</body>
+
+</html>

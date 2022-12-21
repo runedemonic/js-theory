@@ -1,0 +1,10 @@
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 100px;
+    height: 20px;
+}
